@@ -4,7 +4,7 @@
 	<head>
 	<link href="static/styles.css" rel="stylesheet">
 	<link href="static/fonts/fonts.css" rel="stylesheet">
-	<title>Barker</title>
+	<title>Barker - Bark at people near you!</title>
 	</head>
 	
 	<body>
@@ -16,11 +16,11 @@
 		<div class="forminput">
 		    {% for greeting in greetings %}
 				{% if greeting.author %}
-					<b>{{ greeting.author.email }}
+					<strong>{{ greeting.author.email }}
 					  {% if user and user.user_id() == greeting.author.identity %}
 						(You)
 					  {% endif %}
-					</b> wrote:
+					</strong> wrote:
 				  {% else %}
 				   You wrote:
 				  {% endif %}
@@ -30,15 +30,15 @@
 	
     <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
       <div class="forminput"><textarea name="content" rows="15" cols="100"></textarea></div>
-      <div class="forminput"><input type="submit" value="Bark!"></div>
+      <div class="forminput"><input id="bark" type="submit" value="Bark!"></div>
     </form>
-    <a href="{{ url|safe }}">{{ url_linktext }}</a>
+    <a id="login_button" href="{{ url|safe }}">{{ url_linktext }}</a>
 
 	
 	<ul>
 		<li><a href="about.html">About</a></li>
-		<li><a href="contact.html">Credits</a></li>
-		<li><a href="#">Source Code</a></li>
+		<li><a href="credits.html">Credits</a></li>
+		<li><a href="https://github.com/tiatmed/Barker">Source Code</a></li>
 	<ul>
 	
 	</div>

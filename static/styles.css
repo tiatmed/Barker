@@ -25,12 +25,12 @@ li {
 	font-weight: 300;
 	padding-right: 20px;
 	padding-left: 20px;
-	border-right: 3px solid #CCCC00;
+	border-right: 3px solid #fbc93d;
 }
 
 h1 {
 	text-align: center;
-	text-shadow: 8px 5px #CCCC00;
+	text-shadow: 8px 5px #fbc93d;
 	color: white;
 	margin-top: 1em;
 	font-size: 6em;
@@ -51,6 +51,18 @@ h1 {
 	font-weight: 700;
 	font-size: 2em;
 	word-wrap: break-word;
+}
+
+#bark {
+	margin-top: 2em;
+	margin-bottom: 5em;
+    display: inline-block;
+    border-radius: 8px;
+	background: grey;
+    box-shadow: 0 8px 0 #fbc93d, 0 15px 20px;
+    color: #fff;
+	font-family: "knewave";
+	font-size: 0.5em;
 }
 
 
