@@ -1,0 +1,43 @@
+Assessment Rubrics Checklist (updated 12 March)
+Client-side
+[x]HTML5 (DOCTYPE declaration, tags, controls, etc.)
+[x]separation of concerns (do you separate your HTML, CSS and JS files? or mingle everything in HTML?)
+appropriate user interface controls (accessible, mobile, responsive)
+accessible - image alt tag, label, ARIA
+mobile - jQuery mobile or suitable frameworks (if used), viewport, HTML5 mobile controls, BIG, touch/swipe
+responsive - different content views for different form factors/orientation, content responds to various screen sizes/orientation, CSS media queries
+validation
+visual appeal (CSS, favicon, app icon, etc.)
+
+Server-side
+separation of interface from processing logic (do you use any templating engine?)
+processing (is there meaningful/interesting computation? or is it just a lookup?)
+Data
+appropriate fields and types
+suitable storage and retrieval
+protection of user data privacy
+
+Others
+purposeful application identification
+meaningful naming convention
+how well received by your target audience (Google Analytics)
+open source code to GitHub (not data)
+easter egg
+what have you done that is different from what was discussed in class that you have figured out for yourself?
+
+
+Tip: start small and evolve
+
+[x]developed on localhost
+[x]hosted on Google App Engine
+[x]app name (specific to purpose, catchy, representative)
+short description (1-3 sentence)
+favicon, icon, logo
+touch and swipe friendly
+optimized for limited screen estate (single- vs multi- column layout)
+user interface (HTML5 new form controls, jQuery UI) 
+mobile frameworks (jQuery Mobile)
+validation (client-side JavaScript, server-side Python)
+database / file design (table/record structure), HTML5 local storage capability
+main processing logic - Python (preferred) 
+data/content     

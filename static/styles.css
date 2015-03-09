@@ -1,0 +1,76 @@
+body {
+	background: url("img/stardust.png");
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#container {
+	background: url("img/dog.gif");
+	background-repeat: no-repeat;
+	background-size: 25%;
+	background-position: left bottom;
+}
+	
+ul {
+	list-style-type: none;
+	text-align: center;
+
+}
+	
+li {
+	display: inline;
+	font-family: "Ostrich Sans", sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 3px solid #CCCC00;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 8px 5px #CCCC00;
+	color: white;
+	margin-top: 1em;
+	font-size: 6em;
+	font-family: "Knewave", sans-serif;
+	}
+	
+#dog {
+	left: 0;
+	bottom: 0;
+	height: 30%;
+	position: absolute;
+}
+
+.forminput {
+	text-align: center;
+	color: white;
+	font-family: 'Ostrich Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	word-wrap: break-word;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+textarea {
+	width: 50%;
+	height: 30%;
+}
+
+hr {
+	height: 2px;
+	width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
