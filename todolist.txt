@@ -3,7 +3,7 @@ Client-side
 [x]HTML5 (DOCTYPE declaration, tags, controls, etc.)
 [x]separation of concerns (do you separate your HTML, CSS and JS files? or mingle everything in HTML?)
 appropriate user interface controls (accessible, mobile, responsive)
-accessible - image alt tag, label, ARIA
+[x]accessible - image alt tag, label, ARIA
 mobile - jQuery mobile or suitable frameworks (if used), viewport, HTML5 mobile controls, BIG, touch/swipe
 responsive - different content views for different form factors/orientation, content responds to various screen sizes/orientation, CSS media queries
 validation
