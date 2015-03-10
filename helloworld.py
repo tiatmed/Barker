@@ -33,7 +33,6 @@ class Author(ndb.Model):
     identity = ndb.StringProperty(indexed=False)
     email = ndb.StringProperty(indexed=False)
 
-
 class Greeting(ndb.Model):
     """A main model for representing an individual Guestbook entry."""
     author = ndb.StructuredProperty(Author)

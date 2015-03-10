@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-	background: url("img/dog.gif");
+	background: url("dog.gif");
 	background-repeat: no-repeat;
 	background-size: 25%;
 	background-position: left bottom;
