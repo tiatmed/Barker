@@ -116,4 +116,5 @@ var easter_egg = new Konami(function() {
 										$("a").css("color", "black");
 										$("#bday").css("display", "block");
 										$("#container2").css("color", "black");
+										document.getElementById("home").play();
 										});
