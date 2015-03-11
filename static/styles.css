@@ -6,22 +6,64 @@ body {
 }
 
 #container {
-	background: url("dog.gif");
+	background: url("img/dog.png");
 	background-repeat: no-repeat;
 	background-size: 25%;
 	background-position: left bottom;
+	width: 100%;
 }
 	
 ul {
+	margin-top: 2em;
 	list-style-type: none;
 	text-align: center;
+}
 
+#container2 {
+	font-family: "Ostrich Sans";
+	color: white;
+	font-size: 3em;
+}
+
+.normal_li {
+	text-align: left;
+	list-style-type: square;
+	margin-top: 0;
+}
+
+.dancingdudes {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hammer {
+	display: none;
+}
+
+#bday {
+	display: none;
+}
+
+.barker {
+	font-size: 1em;
+	font-weight: 900;
 }
 	
-li {
+.yellowborderli {
 	display: inline;
 	font-family: "Ostrich Sans", sans-serif;
 	font-size: 1.5em;
+	font-weight: 300;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 3px solid #fbc93d;
+}
+
+.yellowborderli2 {
+	display: inline;
+	font-family: "Ostrich Sans", sans-serif;
+	font-size: 3em;
 	font-weight: 300;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -61,7 +103,7 @@ h1 {
 	background: grey;
     box-shadow: 0 8px 0 #fbc93d, 0 15px 20px;
     color: #fff;
-	font-family: "knewave";
+	font-family: "knewave", sans-serif;
 	font-size: 0.5em;
 }
 
@@ -69,11 +111,19 @@ h1 {
 a {
 	text-decoration: none;
 	color: white;
+	font-weight: 900;
 }
 
 textarea {
 	width: 50%;
 	height: 30%;
+	background: rgba(255, 255, 255, 0.2);
+	color: #fbc93d;
+	font-size: 0.3em;
+}
+
+textarea:focus, input:focus {
+	outline: 0;
 }
 
 hr {
@@ -85,4 +135,79 @@ hr {
     background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
     background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
     background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+@media only screen and (min-width: 1281px) {
+	/* for tablets and desktop screens */
+	blockquote {
+		padding-left: 10em;
+		padding-right: 10em;
+	}
+	
+	#container2 {
+		padding-left: 8em;
+		padding-right: 8em;
+	}
+
+}
+
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+	/* for phone screens in landscape */
+	blockquote {
+	padding-right: 5em;
+	padding-left: 5em;
+	}	
+	
+	h1 {
+		font-size: 8em;
+	}
+
+	#container2 {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+}
+
+@media only screen and (max-width: 1280px) and (orientation: portrait) {
+	/* for phone screen sin portrait mode */
+	blockquote {
+	padding: none;
+	margin: none;
+	font-size: 4em;
+	}
+		
+	h1 {
+		font-size: 12em;
+	}
+	
+	.barker {
+		font-size: 2em;
+	}
+	
+	#container {
+	 background: none;
+	}
+	
+	#container2 {
+		padding-right: 0.15em;
+		margin: none;
+	}
+	
+	p {
+		font-size: 1.5em;
+		padding-left: 0.15em;
+		margin: none;
+	}
+	
+	textarea {
+	width: 100%;
+	height: 50%;
+	background: rgba(255, 255, 255, 0.2);
+	color: #fbc93d;
+	font-size: 0.8em;
+	}
+	
+	li {
+		font-size: 1.75em;
+	}
 }

@@ -6,43 +6,52 @@
 	<link href="static/styles.css" rel="stylesheet">
 	<link href="static/fonts/fonts.css" rel="stylesheet">
 	<title>Barker - Bark at people near you!</title>
+	<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+	<link href="static/img/iphone6.png" rel="apple-touch-icon" sizes="180x180" />
+	<link href="static/img/android_hires.png" rel="icon" sizes="192x192" />
 	</head>
 	
 	<body>
-		<div id="login">
-		<h1>Barker</h1>
-		</div>
-
+<!--
 <p><button onclick="geoFindMe()">Show my location</button></p>
 <div id="out"></div>
-	
+!-->
 	<div id="container">
+			<div>
+			  <img class="dancingdudes" src="static/img/nicedance.gif" alt="dancing Sporean">
+			  <h1>Barker</h1>
+			  <h1 id="bday">SG50 *** Happy Birthday SG *** SG50</h1>
+			  <img class="dancingdudes" src="static/img/nicedance.gif" alt="dancing Sporean">
+			</div>
 		<div class="forminput">
 		    {% for greeting in greetings %}
 				{% if greeting.author %}
-					<strong>{{ greeting.author.email }}
+					<p class="barker"><strong>{{ greeting.author.email }}
 					  {% if user and user.user_id() == greeting.author.identity %}
+					    </p>
 						(You)
 					  {% endif %}
-					</strong> wrote:
+					</strong> barked:
 				  {% else %}
-				   You wrote:
+				  <p class="barker"> An anonymous dog barked:</p>
 				  {% endif %}
 				  <blockquote>{{ greeting.content }}</blockquote>
 				  <hr>
 				{% endfor %}
 	
     <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
-      <div class="forminput"><textarea name="content" rows="15" cols="100"></textarea></div>
+      <div class="forminput"><textarea name="content" rows="15" cols="100" placeholder="Write about something that happened near you!"></textarea></div>
       <div class="forminput"><input id="bark" type="submit" value="Bark!"></div>
     </form>
     <a id="login_button" href="{{ url|safe }}">{{ url_linktext }}</a>
 
-	
 	<ul>
-		<li><a href="about.html">About</a></li>
-		<li><a href="credits.html">Credits</a></li>
-		<li><a href="https://github.com/tiatmed/Barker">Source Code</a></li>
+		<img class="hammer" src="static/img/nicehammer.gif">
+		<li class="yellowborderli"><a href="/">Home</a></li>
+		<li class="yellowborderli"><a href="/about">About</a></li>
+		<li class="yellowborderli"><a href="/credits">Credits</a></li>
+		<li class="yellowborderli"><a href="https://github.com/tiatmed/Barker">Source Code</a></li>
+		<img class="hammer" src="static/img/nicehammer.gif">
 	<ul>
 	
 	</div>	
@@ -56,8 +65,9 @@
 	  ga('send', 'pageview');
 	
 	</script>
+	<script src="static/konami.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="static/myScript.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	</body>
 </html>
 {% endautoescape %}
